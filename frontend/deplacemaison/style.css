@@ -1,0 +1,25 @@
+body {
+    font-size: 16px;
+}
+
+.top-left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-left li {
+    list-style-type: none;
+}

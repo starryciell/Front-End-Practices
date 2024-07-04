@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "RocknRoll One";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 4%;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    .container {
+        padding: 3%;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .container {
+        padding: 2%;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-left li, .navbar-secondary li, .navbar-left img {
+    float: left;
+}
+
+.navbar-left img {
+    margin: 0 25px 0 8px;
+}
+
+.navbar-left ul li, .navbar-right ul li {
+    font-size: 16px;
+    margin-top: 3px;
+    margin-right: 25px;
+}
+
+.navbar-right li {
+    float: left;
+    flex-direction: row-reverse;
+}
+
+.navbar-left ul a, .navbar-secondary ul li a {
+    flex: 1;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-right ul a {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-left a:link, .section-four a, .navbar-right a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-left a:hover, .section-four a:hover, .navbar-right a:hover {
+    color: rgb(248, 78, 11);
+}
+
+#try-live a:hover{
+    text-shadow: 2px 2px #000000;
+}
+
+.navbar-separator {
+    border-top: 2px solid #eee;
+    height: 0;
+    display: block;
+}
+
+.navbar-secondary ul li{
+    padding: 8px;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+#top-pic, video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-one {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#center-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    font-size: 70px;
+}
+
+.section-one, .section-two, .section-three {
+    padding: 5% 20%;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* .container-two {
+    position: relative;
+} */
+
+#horse-img {
+    position: relative;
+    width: 45%;
+    left: 10%;
+    right: 20%;
+    /* padding: 30px 40px 0 50px; */
+}
+
+#zoomed-horse-img {
+    position: relative;
+    width: 25%;
+    right: -20%;
+    bottom: 10%;
+    padding: 0 0 15% 0;
+}
+
+h6 {
+    position: sticky;
+    /* margin-block-start: 1.8em;
+    margin-block-end: 2.33em; */
+    margin-left: 20%;
+}
+
+.section-four {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#goat-img, #goat-text {
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: 50%;
+    height: auto;    /* height: 50%;
+    background: no-repeat; */
+    float: left;
+    /* background: 50% 50% no-repeat; */
+    margin-bottom: 10%;
+}
+
+#goat-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    aspect-ratio: 1;
+    width: 50%;
+    height: auto;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    /* padding: 40px 150px; */
+    font-size: 18px;
+}
+
+.footer, .main-footer, #ableton-footer {
+    margin: 20px 100px;
+}
+
+.col-one, .col-two {
+    flex: 1;
+}
+
+.col-three {
+    flex: 2;
+    max-width: 500px;
+}
+
+#ableton-footer {
+    margin: 100px 0 0 100px;
+    font-size: 50px;
+}
+
+.ableton, .community, .education, .language-and-location, .col-three {
+    justify-content:space-between;
+    align-items: center;
+    align-content: flex-start;
+    margin: 80px 0;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer a  {
+    text-decoration: none;
+    font-weight: lighter;
+    color: #000000;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    /* align-items: center; */
+    gap: 36px;
+    margin-top: 5px;
+    /* max-width: 50%; */
+    padding: 0;
+}
+
+.fa {
+    font-size: 5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook-square {
+    color: #1877F2;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-youtube-play {
+    color: #CD201F;
+}
+
+.fa-instagram {
+    color: #f09433;
+}
+
+/* .footer .col-one a {
+    list-style-type: none;
+    color: #000000;
+} */
+
+#languages, #google_translate_element {
+    width: 100px;
+}
+
+#location {
+    width: 200px;
+}
+
+#sign-up-to-newsletter, .main-footer__button {
+    border: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+
+#sign-up-to-newsletter {
+    background-color: rgb(226, 223, 223);
+    width: 250px;
+}
+
+.main-footer__button {
+    background-color: #a7c7f1;
+    margin: -6px;
+    width: 100px;
+}
+
+input.main-footer__button:hover {
+    cursor: pointer;
+}
+
+.form-select {
+    position: relative;
+    font-family: "RocknRoll One";
+    width: 50%;
+}
+
+.main-footer {
+    display: flex;
+    flex: 1;
+}
+
+/* .main-footer-left, .main-footer-right {
+    display: flex;
+    flex: 1;
+} */
+
+.main-footer-left ul {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.main-footer-left li a {
+    margin-right: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-footer-right {
+    display: flex;
+    flex: 1;
+    float: right;
+    flex-direction: row-reverse;
+
+}
+
+.main-footer-right p, .main-footer-right img {
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer-right p {
+    margin: 4px 25px;
+}
+
+.main-footer {
+    margin-bottom: 80px;
+}

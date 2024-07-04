@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Kanit;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    left: 0;
+    transition-property: left, background-color;
+    transition-duration: .4s, .4s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, .4s; 
+}
+
+.top-left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 320px;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.top-left h1 {
+    font-size: 40px;
+}
+
+.top-right h6 {
+    font-size: 20px;
+}
+
+.bottom-left p {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.bottom-left a, .bottom-right a {
+    color: black;
+}
+
+.bottom-left a:hover {
+    text-decoration: none;
+}
+
+#credit, #publisher {
+    font-size: 15px;
+    padding: 6px 0 30px 0;
+    opacity: 0.8;
+}
+
+.bottom-left #privacy-policy {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottom-right ul {
+    font-size: 18px;
+}
+
+.bottom-right li {
+    list-style-type: none;
+}
+
+.bottom-right a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.bottom-right a:hover, .issue a:hover {
+    text-decoration: underline;
+}
+
+.issue img {
+    width: 440px;
+    margin: auto;
+    display: block;
+    padding-top: 30px;
+}
+
+.issue p {
+    text-align: center;
+font-weight: 600;
+
+}
+
+.issue a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.issue6 a {
+    color: #ed7287;
+}
+
+.issue7 {
+    background-color: #ff608c;
+}
+
+.issue5 {
+    background-color: #00c1b5;
+}
+
+.issue4 {
+    background-color: #ff651a;
+}
+
+.issue3 {
+    background-color: #ffbe00;
+}
+
+.issue2 {
+    background-color: #1d3fbb;
+}
+
+.issue1 {
+    background-color: #e30512;
+}
+
+/* .fixed {
+    position: fixed;
+} */
+
+/* .container {
+    display: flex;
+} */
+
+/* .left-up {
+    display: flex;
+
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.left-down {
+    display: flex;
+
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.right-up {
+    display: flex;
+
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.right-down {
+    display: flex;
+
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+} */
+

@@ -1,0 +1,41 @@
+.navbar-container {
+    display: flex;
+}
+
+.navbar-left {
+    display: flex;
+
+    float: left;
+}
+
+.navbar-middle {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#track-list-number {
+    display: flex;
+    flex: 1;
+    float: left;
+    flex-direction: row;
+    margin: 10px 20px;
+}
+
+#track-list-title {
+    display: flex;
+    flex: 2;
+
+    flex-direction: column;
+
+}
+
